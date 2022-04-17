@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #58b4d1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.HomeController">
+   <children>
+      <Button fx:id="calcButton" layoutX="64.0" layoutY="181.0" mnemonicParsing="false" onAction="#toCalc" prefHeight="134.0" prefWidth="138.0" style="-fx-background-radius: 100px; -fx-background-color: #023047;" text="Calculator" textFill="#fffdfd" />
+      <Button fx:id="calendarButton" layoutX="579.0" layoutY="181.0" mnemonicParsing="false" onAction="#toCalendar" prefHeight="134.0" prefWidth="138.0" style="-fx-background-radius: 100px; -fx-background-color: #126782;" text="Calendar" textFill="#f5f0f0" />
+      <Button fx:id="musicButton" layoutX="461.0" layoutY="343.0" mnemonicParsing="false" onAction="#toMusic" prefHeight="134.0" prefWidth="138.0" style="-fx-background-radius: 100px; -fx-background-color: #8ecae6;" text="Music Playlist" textFill="#fcfcfc" />
+      <Button fx:id="pomButton" layoutX="331.0" layoutY="181.0" mnemonicParsing="false" onAction="#toPom" prefHeight="134.0" prefWidth="138.0" style="-fx-background-radius: 100px; -fx-background-color: #ffb703;" text="Pomodoro Timer" textFill="#fcfcfc" />
+      <Button fx:id="plannerButton" layoutX="202.0" layoutY="343.0" mnemonicParsing="false" onAction="#toPlanner" prefHeight="134.0" prefWidth="138.0" style="-fx-background-radius: 100px; -fx-background-color: #fb8500;" text="To-Do List" textFill="#f8f5f5" />
+      <Label layoutX="123.0" layoutY="63.0" text="Welcome to WhiteBoard!" textFill="#f5f3f3">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
