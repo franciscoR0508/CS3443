@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane style="-fx-background-color: #126782;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.PomoController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <Label fx:id="timerLbl" layoutX="284.0" layoutY="211.0" prefHeight="189.0" prefWidth="271.0" text="25:00" textFill="WHITE">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Label>
+            <Button fx:id="startBtn" layoutX="213.0" layoutY="410.0" mnemonicParsing="false" onAction="#startTimer" prefHeight="128.0" prefWidth="125.0" style="-fx-background-color: #fb8500; -fx-background-radius: 100px;" text="START" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Label fx:id="studySessionLbl" layoutX="136.0" layoutY="605.0" prefHeight="17.0" prefWidth="245.0" text="" textFill="WHITE" />
+            <Label fx:id="whatsNextLbl" layoutX="506.0" layoutY="605.0" prefHeight="19.0" prefWidth="251.0" text="" textFill="WHITE" />
+            <Button fx:id="pauseBtn" layoutX="463.0" layoutY="410.0" mnemonicParsing="false" onAction="#pauseTimer" prefHeight="128.0" prefWidth="125.0" style="-fx-background-color: #fb8500; -fx-background-radius: 100px;" text="PAUSE" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Label layoutX="168.0" layoutY="117.0" text="Pomodoro Timer" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="58.0" />
+               </font>
+            </Label>
+            <Button fx:id="homebtn" layoutX="700.0" layoutY="25.0" mnemonicParsing="false" onAction="#goHome" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #fb8500; -fx-background-radius: 100px;" text="HOME" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

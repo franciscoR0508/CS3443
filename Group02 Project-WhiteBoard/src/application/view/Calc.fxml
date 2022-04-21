@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox alignment="CENTER" fillWidth="false" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="350.0" spacing="2.0" style="-fx-background-color: Gainsboro; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.CalcController">
+   <children>
+      <StackPane focusTraversable="true" prefHeight="110.0" prefWidth="350.0" style="-fx-background-color: slategrey; -fx-border-color: black;">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="299.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/1630631799696.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="result" alignment="CENTER" contentDisplay="CENTER" opacity="0.89" prefHeight="21.0" prefWidth="150.0" style="-fx-background-color: lightgrey;" />
+         </children>
+         <effect>
+            <Lighting diffuseConstant="1.44" specularConstant="0.5" specularExponent="40.0" surfaceScale="4.43">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#f5e7e7" />
+               </light>
+            </Lighting>
+         </effect>
+      </StackPane>
+      <HBox alignment="CENTER" focusTraversable="true" prefHeight="60.0" prefWidth="350.0" spacing="8.0" style="-fx-background-color: grey; -fx-border-color: black;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Operators" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: peachpuff; -fx-border-color: lightsteelblue;" text="/" textFill="#615f5f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#Operators" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: peachpuff; -fx-border-color: lightsteelblue;" text="x" textFill="#615f5f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#Operators" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: peachpuff; -fx-border-color: lightsteelblue;" text="-" textFill="#615f5f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#Operators" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: peachpuff; -fx-border-color: lightsteelblue;" text="+" textFill="#615f5f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+         </children>
+         <effect>
+            <Lighting surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DISAPPEAR" />
+         </cursor>
+      </HBox>
+      <HBox alignment="CENTER" focusTraversable="true" layoutX="10.0" layoutY="128.0" prefHeight="60.0" prefWidth="350.0" spacing="8.0" style="-fx-background-color: silver; -fx-border-color: black;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Numbers" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: lightsteelblue; -fx-border-color: peachpuff;" text="7" textFill="#615f5f">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#Numbers" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: lightsteelblue; -fx-border-color: peachpuff;" text="8" textFill="#615f5f">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#Numbers" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: lightsteelblue; -fx-border-color: peachpuff;" text="9" textFill="#615f5f">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#Numbers" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: peachpuff; -fx-border-color: lightsteelblue;" text="0" textFill="#615f5f">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Button>
+         </children>
+         <effect>
+            <Lighting surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </HBox>
+      <HBox alignment="CENTER" focusTraversable="true" layoutX="10.0" layoutY="196.0" prefHeight="60.0" prefWidth="350.0" spacing="8.0" style="-fx-background-color: lightgrey; -fx-border-color: black;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Numbers" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: lightsteelblue; -fx-border-color: peachpuff;" text="4" textFill="#615f5f">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#Numbers" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: lightsteelblue; -fx-border-color: peachpuff;" text="5" textFill="#615f5f">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#Numbers" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: lightsteelblue; -fx-border-color: peachpuff;" text="6" textFill="#615f5f">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#Reset" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: peachpuff; -fx-border-color: lightsteelblue;" text="CLEAR" textFill="#615f5f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+         </children>
+         <effect>
+            <Lighting surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </HBox>
+      <HBox alignment="CENTER" focusTraversable="true" layoutX="10.0" layoutY="246.0" prefHeight="60.0" prefWidth="350.0" spacing="8.0" style="-fx-background-color: Gainsboro; -fx-border-color: black;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Numbers" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: lightsteelblue; -fx-border-color: peachpuff;" text="1" textFill="#615f5f">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#Numbers" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: lightsteelblue; -fx-border-color: peachpuff;" text="2" textFill="#615f5f">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#Numbers" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: lightsteelblue; -fx-border-color: peachpuff;" text="3" textFill="#615f5f">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#Operators" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: peachpuff; -fx-border-color: lightsteelblue;" text="=" textFill="#615f5f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+         </children>
+         <effect>
+            <Lighting surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </HBox>
+      <HBox prefHeight="35.0" prefWidth="348.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#calcToHome" prefHeight="33.0" prefWidth="349.0" style="-fx-background-color: peachpuff; -fx-border-color: lightsteelblue;" text="HOME" textFill="#615f5f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <effect>
+      <Lighting>
+         <bumpInput>
+            <Shadow />
+         </bumpInput>
+         <light>
+            <Light.Distant />
+         </light>
+      </Lighting>
+   </effect>
+</VBox>

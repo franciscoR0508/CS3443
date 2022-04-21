@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ToDoListController">
+   <left>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="543.0" prefWidth="901.0">
+         <items>
+            <AnchorPane fx:id="aPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="922.0" style="-fx-background-color: #126782;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="addEventButton" alignment="TOP_CENTER" layoutX="7.7" layoutY="10.0" mnemonicParsing="false" onAction="#addEvent" style="-fx-background-color: #fd9e02;" text="Add Event" textFill="#023047">
+                     <font>
+                        <Font name="Nirmala UI" size="15.0" />
+                     </font></Button>
+                  <DatePicker fx:id="date" layoutX="120.0" layoutY="10.0" onAction="#addDate" prefHeight="31.0" prefWidth="162.0" promptText="Add date" style="-fx-border-color: #fd9e02;" />
+                  <TextField fx:id="description" layoutX="305.0" layoutY="9.0" onAction="#addDescription" prefHeight="33.0" prefWidth="648.0" promptText="Add event description" style="-fx-border-color: #fd9e02;">
+                     <font>
+                        <Font name="Nirmala UI Semilight" size="15.0" />
+                     </font></TextField>
+                  <Separator layoutX="293.0" orientation="VERTICAL" prefHeight="114.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="293.0" AnchorPane.topAnchor="0.0" />
+                  <Separator layoutX="104.0" orientation="VERTICAL" prefHeight="45.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="104.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <ListView fx:id="eventList" prefHeight="483.0" prefWidth="904.0" style="-fx-control-inner-background: #8ecae6; -fx-border-color: #fd9e02;" />
+         </items>
+      </SplitPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="57.0" prefWidth="924.0" style="-fx-background-color: #023047; -fx-border-color: #fd9e02;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="354.0" layoutY="4.0" text="Daily To-Do List" textFill="#f8f6f6">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Button layoutX="880.0" layoutY="13.0" mnemonicParsing="false" onAction="#toHome" style="-fx-background-color: #fd9e02;" text="Home" textFill="#023047" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="57.0" prefWidth="955.0" style="-fx-background-color: #126782; -fx-border-color: #fd9e02;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="deleteEventButton" layoutX="400.0" layoutY="13.0" mnemonicParsing="false" onAction="#deleteEvent" style="-fx-background-color: #fd9e02;" text="Delete Selected Event" textFill="#023047" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

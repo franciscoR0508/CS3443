@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.weeklyCalanderController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#023047" height="800.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ecae6" height="775.0" layoutX="12.0" layoutY="12.0" stroke="BLACK" strokeType="INSIDE" width="775.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffb703" height="254.0" layoutX="33.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="443.0" />
+      <Label layoutX="41.0" layoutY="34.0" text="Whiteboard - Weekly Planner">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="102.0" text="Create New Event">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="titleField" layoutX="52.0" layoutY="161.0" prefHeight="27.0" prefWidth="408.0" />
+      <Label layoutX="52.0" layoutY="140.0" text="Title">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="276.0" text="Time" />
+      <TextField fx:id="timeField" layoutX="52.0" layoutY="294.0" prefHeight="27.0" prefWidth="107.0" promptText="00:00 Format" />
+      <Label layoutX="54.0" layoutY="210.0" text="Description" />
+      <TextField fx:id="description" layoutX="53.0" layoutY="230.0" prefHeight="27.0" prefWidth="408.0" />
+      <Button fx:id="addToCalander" layoutX="354.0" layoutY="294.0" mnemonicParsing="false" onAction="#addCalanderEvent" prefHeight="31.0" prefWidth="116.0" text="Add to Calander">
+         <font>
+            <Font size="13.5" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#126782" height="411.0" layoutX="35.0" layoutY="352.0" stroke="BLACK" strokeType="INSIDE" width="732.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffb703" height="39.0" layoutX="47.0" layoutY="368.0" stroke="BLACK" strokeType="INSIDE" width="689.0" />
+      <Label layoutX="67.0" layoutY="381.0" text="Monday" />
+      <Label layoutX="215.0" layoutY="381.0" text="Tuesday" />
+      <Label layoutX="340.0" layoutY="381.0" text="Wednesday" />
+      <Label layoutX="478.0" layoutY="381.0" text="Thursday" />
+      <Label layoutX="619.0" layoutY="381.0" text="Friday" />
+      <TextArea fx:id="monText" layoutX="50.0" layoutY="425.0" prefHeight="300.0" prefWidth="125.0" />
+      <TextArea fx:id="tuesText" layoutX="180.0" layoutY="425.0" prefHeight="300.0" prefWidth="125.0" />
+      <TextArea fx:id="wedText" layoutX="310.0" layoutY="425.0" prefHeight="300.0" prefWidth="125.0" />
+      <TextArea fx:id="thurText" layoutX="440.0" layoutY="425.0" prefHeight="300.0" prefWidth="125.0" />
+      <TextArea fx:id="friText" layoutX="570.0" layoutY="425.0" prefHeight="300.0" prefWidth="125.0" />
+      <ChoiceBox fx:id="dayChoice" layoutX="182.0" layoutY="294.0" prefWidth="150.0" />
+      <Label layoutX="186.0" layoutY="276.0" text="Day of Week" />
+      <Button layoutX="704.0" layoutY="34.0" mnemonicParsing="false" onAction="#calendarToHome" text="Home" />
+   </children>
+</AnchorPane>
